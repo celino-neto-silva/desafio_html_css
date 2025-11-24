@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'androidfont';
+    src: url("pacote-projeto-d010/fontes/idroid.otf");
+}
+@font-face {
+    font-family: 'headerfont';
+    src: url("pacote-projeto-d010/fontes/Roboto-VariableFont_wdth\,wght.ttf");
+}
+*{
+    margin: 0px;
+}
+/*
+:root {
+  --cor-primaria: #3498db;
+  --cor-secundaria: #2ecc71;
+  --fonte-principal: 'Arial', sans-serif;
+}
+*/
+:root{
+    --body_color: #3DD973;
+}
+
+body{
+    background-color: var(--body_color);
+}
+header{
+    background-image: linear-gradient(to bottom, #36C274, #299458, #1C663C);
+    color: white;
+    padding-top: 30px;
+}
+
+header > h1{
+    font-family: 'headerfont', sans-serif;
+    color: white;
+    letter-spacing: -2px;
+    text-shadow: #000000bb 1px 2px;
+    text-align: center;
+}
+
+header > p{
+    font-family: 'headerfont', sans-serif;
+    text-shadow: #000000bb 0px 1.5px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;    
+}
+
+header > nav{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'headerfont', sans-serif;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+header > nav > a:hover{
+    background-color: #72b68f;
+    color: #1C663C;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+main{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 5px;  /* Canto inferior esquerdo */
+    border-bottom-right-radius: 5px;
+    color: black;
+    font-family: 'headerfont';
+}
+
+section{
+    padding: 10px;
+}
+section > img{
+    margin: auto;
+}
+
+h1,h2{
+    font-family: 'androidfont';
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #1C663C;
+}
+
+h2{
+    background-image: linear-gradient(to right, #36C274, #c8d5ce, #ffffff);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-family: 'headerfont';
+    background-color: #1C663C;
+    margin-top: 20px;
+    padding: 20px;
+}
